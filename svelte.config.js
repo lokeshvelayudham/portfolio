@@ -25,7 +25,7 @@ const config = {
 			'@utils': './src/lib/utils'
 		},
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/portfolio' : ''
+			base: process.env.NODE_ENV === 'production' ? '/slick-portfolio-svelte-master' : ''
 		}
 	}
 };
