@@ -3,29 +3,30 @@ import type { Education } from '../types';
 
 export const items: Array<Education> = [
 	{
-		degree: 'Bachelor degree of Computer Science',
-		description: '',
-		location: 'Tunisia',
-		logo: Assets.Unknown,
-		name: '',
-		organization: 'ISTIC',
-		period: { from: new Date(2020, 0, 1), to: new Date(2022, 5, 1) },
-		shortDescription: '',
-		slug: 'dummy-education-item',
-		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English']
-	},
-	{
-		degree: 'PhD of Computer Science',
+		degree: 'Master of Science in Computer Science and Data Science',
 		description: '',
 		location: 'USA',
-		logo: Assets.Unknown,
+		logo: Assets.CWRU,
 		name: '',
-		organization: 'MIT',
-		period: { from: new Date(2023, 0, 1) },
+		organization: 'Case Western Reserve University',
+		period: { from: new Date(2023, 8, 26), to: new Date(2025, 6, 1) },
 		shortDescription: '',
 		slug: 'dummy-education-item-2',
-		subjects: ['Assembly', 'Rust', 'Computer Architecture', 'Algorithms and Data structures']
+		subjects: [ 'LLM', 'Machine Learning', 'Algorithms and Data structures', 'Computer security', 'High Performance Computing',  'Database Systems',  'Web Development', 'Software Engineering',  'Artificial Intelligence', 'Deep Learning']
+	},
+	{
+		degree: 'Bachelor of Engineering in Electronics and Communication',
+		description: '',
+		location: 'India',
+		logo: Assets.Anna,
+		name: '',
+		organization: 'Anna University',
+		period: { from: new Date(2014, 8, 1), to: new Date(2018, 8, 1) },
+		shortDescription: '',
+		slug: 'dummy-education-item',
+		subjects: ['C', 'Algorithm', 'Algebra', 'Python', 'C++', 'Java', 'English', 'Calculus', 'Electronics', 'Digital Logic']
 	}
+
 ];
 
 export const title = 'Education';

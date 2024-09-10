@@ -2,7 +2,7 @@ import type { Asset } from '$lib/types';
 import { theme } from '$lib/stores/theme';
 import { base } from '$app/paths';
 
-const gh = (file: string) => `${base}/logos/${file}`;
+const gh = ( file: string) => `${base}/logos/${file}`;
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
@@ -14,7 +14,7 @@ const Assets = {
 	Cpp: a('cpp.svg'),
 	Celery: a('celery.svg'),
 	Django: a('django.svg'),
-	FastApi: a('fastapi'),
+	FastApi: a('fastapi.svg'),
 	Flask: a('flask.svg'),
 	Go: a('go.svg'),
 	Kafka: a('kafka.svg'),
@@ -70,7 +70,9 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	CWRU: a('cwru.svg'),
+	Anna: a('anna.png')
 };
 
 export default Assets;

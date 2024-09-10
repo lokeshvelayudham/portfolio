@@ -17,7 +17,8 @@ const categories = [
 	defineSkillCategory({ name: 'Dev Tools', slug: 'devtools' }),
 	defineSkillCategory({ name: 'Markup & Style', slug: 'markup-style' }),
 	defineSkillCategory({ name: 'Design', slug: 'design' }),
-	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' })
+	defineSkillCategory({ name: 'Soft Skills', slug: 'soft' }),
+	defineSkillCategory({ name: 'Environments & Runtime', slug: 'env' })
 ] as const;
 
 const defineSkill = <S extends string>(
@@ -96,7 +97,155 @@ export const items = [
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
-	})
+	}),
+	defineSkill({
+		slug: 'python',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Python,
+		name: 'Python',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'nodejs',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.NodeJs,
+		name: 'Node Js',
+		category: 'env'
+	}),
+	defineSkill({
+		slug: 'expressjs',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.ExpressJs,
+		name: 'Express Js',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'mongodb',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.MongoDB,
+		name: 'MongoDB',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'postgresql',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.PostgreSQL,
+		name: 'PostgreSQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'redis',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Redis,
+		name: 'Redis',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'docker',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Docker,
+		name: 'Docker',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'kubernetes',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Kubernetes,
+		name: 'Kubernetes',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'aws',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.AWS,
+		name: 'AWS',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'fastapi',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.FastApi,
+		name: 'Fast Api',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'django',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Django,
+		name: 'Django',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'flask',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Flask,
+		name: 'Flask',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'vite',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Vite,
+		name: 'Vite',
+		category: 'devtools'
+	}),
+	defineSkill({
+		slug: 'tailwind',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Tailwind,
+		name: 'Tailwind',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'bootstrap',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Bootstrap,
+		name: 'Bootstrap',
+		category: 'markup-style'
+	}),
+	defineSkill({
+		slug: 'pandas',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Pandas,
+		name: 'Pandas',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'numpy',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Numpy,
+		name: 'Numpy',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'firebase',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Firebase,
+		name: 'Firebase',
+		category: 'db'
+	}),
+	
+	
+	
+	
 ] as const;
 
 export const title = 'Skills';
