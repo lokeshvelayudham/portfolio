@@ -176,7 +176,7 @@ export const items = [
 		description: svelte,
 		logo: Assets.FastApi,
 		name: 'Fast Api',
-		category: 'library'
+		category: 'framework'
 	}),
 	defineSkill({
 		slug: 'django',
@@ -184,7 +184,7 @@ export const items = [
 		description: svelte,
 		logo: Assets.Django,
 		name: 'Django',
-		category: 'library'
+		category: 'framework'
 	}),
 	defineSkill({
 		slug: 'flask',
@@ -192,7 +192,7 @@ export const items = [
 		description: svelte,
 		logo: Assets.Flask,
 		name: 'Flask',
-		category: 'library'
+		category: 'framework'
 	}),
 	defineSkill({
 		slug: 'vite',
@@ -242,6 +242,59 @@ export const items = [
 		name: 'Firebase',
 		category: 'db'
 	}),
+	defineSkill({
+		slug: 'solidworks',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.SolidWorks,
+		name: 'SolidWorks',
+		category: 'design'
+	}),
+	defineSkill({
+		slug: 'mysql',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.MySQL,
+		name: 'MySQL',
+		category: 'db'
+	}),
+	defineSkill({
+		slug: 'go',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Go,
+		name: 'Go',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'android',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Android,
+		name: 'Android',
+		category: 'env'
+	}),
+	defineSkill({
+		slug: 'tensorflow',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.Tensorflow,
+		name: 'Tensorflow',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'php',
+		color: 'orange',
+		description: svelte,
+		logo: Assets.PHP,
+		name: 'PHP',
+		category: 'pro-lang'
+	}),
+	
+	
+	
+	
+	
 	
 	
 	

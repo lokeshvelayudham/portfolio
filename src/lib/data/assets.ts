@@ -72,7 +72,16 @@ const Assets = {
 	Ruvy: a('ruvy.svg'),
 	Postcss: a('postcss.svg'),
 	CWRU: a('cwru.svg'),
-	Anna: a('anna.png')
+	Anna: a('anna.png'),
+	SolidWorks: a('solidworks.png'),
+	MySQL: a('Mysql.png'),
+	AlterCabs: a('alter.png'),
+	Tensorflow: a('Tensorflow.png'),
+	BlindCh3mistry: a('BC.png'),
+	FooxTechnologies: a('foox.png'),
+	GUVI: a('gv.webp'),
+	PHP: a('php.png'),
+	Beyondx: a('bx.png'),
 };
 
 export default Assets;
