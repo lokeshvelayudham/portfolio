@@ -1,4 +1,47 @@
 # Slick Portfolio With Svelte.
+# Lokesh Poluru Velayudham's Portfolio
+
+Welcome to my personal portfolio website built with Svelte and SvelteKit.
+
+## About
+
+This portfolio showcases my projects, skills, and experience as a software developer. It's designed to be a clean, responsive, and interactive representation of my professional profile.
+
+## Features
+
+- Responsive design
+- Project showcase
+- Skills and technologies section
+- About me page
+- Contact information
+
+## Technologies Used
+
+- Svelte
+- SvelteKit
+- TypeScript
+- UnoCSS
+- Markdown for content
+- GitHub Actions for deployment
+
+## Local Development
+
+To run this project locally:
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   yarn install --immutable --immutable-cache --check-cache
+   ```
+3. Start the development server:
+   ```
+   yarn dev
+   ```
+
+## Building for Production
+
+To create a production build:
+
 <!-- 
 Vercel-like style portfolio template for developers.
 
