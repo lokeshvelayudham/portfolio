@@ -1,4 +1,4 @@
-import{A as e}from"./UIcon.addd0a01.js";import{g as n}from"./skills.f3022a99.js";import{C as o}from"./types.e12e7b78.js";const a=[{slug:"open-sourcer",company:"Case Western Reserve University",description:`• Developed full-stack registration app using MERN stack with dashboards for students, judges, and admins.
+import{A as e}from"./UIcon.3bc7cdce.js";import{g as n}from"./skills.b69fc1b9.js";import{C as o}from"./types.e12e7b78.js";const a=[{slug:"open-sourcer",company:"Case Western Reserve University",description:`• Developed full-stack registration app using MERN stack with dashboards for students, judges, and admins.
 
 • Automated student-judge matching for 1500+ students and 250+ judges, improving event efficiency.
 
