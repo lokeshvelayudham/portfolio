@@ -2,10 +2,13 @@ import type { Asset } from '$lib/types';
 import { theme } from '$lib/stores/theme';
 import { base } from '$app/paths';
 
-const gh = ( file: string) => `${base}/logos/${file}`;
+const gh = (file: string) => `${base}/logos/${file}`;
+const sc = (file: string) => `${base}/screenshots/${file}`;
 
 const a = (light: string, dark?: string): Asset =>
 	dark ? { dark: gh(dark), light: gh(light) } : gh(light);
+const s = (light: string, dark?: string): Asset =>
+	dark ? { dark: sc(dark), light: sc(light) } : sc(light);
 
 const Assets = {
 	AWS: a('aws.svg'),
@@ -82,6 +85,19 @@ const Assets = {
 	GUVI: a('gv.webp'),
 	PHP: a('php.png'),
 	Beyondx: a('bx.png'),
+
+	// Screenshots of Products
+	AlterCabsScreenshot1: s('alter1.png'),
+	AlterCabsScreenshot2: s('alter2.png'),
+	AlterCabsScreenshot3: s('alter3.png'),
+	AlterCabsScreenshot4: s('alter4.png'),
+	GuviScreeshot1: s('guvi1.png'),
+	GuviScreeshot2: s('guvi2.png'),
+	GuviScreeshot3: s('guvi3.png'),
+	gitCraftScreenshot1: s('gc1.png'),
+	gitCraftScreenshot2: s('gc2.png'),
+	gitCraftScreenshot3: s('gc3.png'),
+	gitCraftScreenshot4: s('gc4.png'),
 };
 
 export default Assets;

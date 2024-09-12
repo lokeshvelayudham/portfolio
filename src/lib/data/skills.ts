@@ -1,6 +1,40 @@
 import Assets from './assets';
 import type { Skill, SkillCategory } from '../types';
 import svelte from '../md/svelte.md?raw';
+import python from '../md/python.md?raw';
+import js from '../md/js.md?raw';
+import ts from '../md/ts.md?raw';
+import tailwiind from '../md/tailwind.md?raw';
+import reactjs from '../md/reactjs.md?raw';
+import nodejs from '../md/nodejs.md?raw';
+import expressjs from '../md/expressjs.md?raw';
+import mongodb from '../md/mongodb.md?raw';
+import postgresql from '../md/postgresql.md?raw';
+import redis from '../md/redis.md?raw';
+import docker from '../md/docker.md?raw';
+import fastapi from '../md/fastapi.md?raw';
+import django from '../md/django.md?raw';
+import aws from '../md/aws.md?raw';
+import flask from '../md/flask.md?raw';
+import vite from '../md/vite.md?raw';
+import pandas from '../md/pandas.md?raw';
+import numpy from '../md/numpy.md?raw';
+import firebase from '../md/firebase.md?raw';
+import solidworks from '../md/solidwroks.md?raw';
+import mysql from '../md/mysql.md?raw';
+import go from '../md/go.md?raw';
+import android from '../md/android.md?raw';
+import tensorflow from '../md/tensorflow.md?raw';
+import php from '../md/php.md?raw';
+
+
+
+
+
+
+
+
+
 import { omit, type StringWithAutoComplete } from '@riadh-adrani/utils';
 
 const defineSkillCategory = <S extends string>(data: SkillCategory<S>): SkillCategory<S> => data;
@@ -39,8 +73,7 @@ export const items = [
 	defineSkill({
 		slug: 'js',
 		color: 'yellow',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description:js,
 		logo: Assets.JavaScript,
 		name: 'Javascript',
 		category: 'pro-lang'
@@ -48,8 +81,7 @@ export const items = [
 	defineSkill({
 		slug: 'ts',
 		color: 'blue',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description:ts,
 		logo: Assets.TypeScript,
 		name: 'Typescript',
 		category: 'pro-lang'
@@ -58,7 +90,7 @@ export const items = [
 		slug: 'css',
 		color: 'blue',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Level of Eexpertise : 7/10',
 		logo: Assets.CSS,
 		name: 'CSS',
 		category: 'markup-style'
@@ -67,7 +99,7 @@ export const items = [
 		slug: 'html',
 		color: 'orange',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Level of Eexpertise : 8/10',
 		logo: Assets.HTML,
 		name: 'HTML',
 		category: 'markup-style'
@@ -76,7 +108,7 @@ export const items = [
 		slug: 'sass',
 		color: 'pink',
 		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+			'Level of Eexpertise : 6/10',
 		logo: Assets.Sass,
 		name: 'Sass',
 		category: 'markup-style'
@@ -84,8 +116,7 @@ export const items = [
 	defineSkill({
 		slug: 'reactjs',
 		color: 'cyan',
-		description:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci enim, congue sit amet justo eget, consequat sollicitudin libero. Etiam iaculis lectus tempor, hendrerit enim in, luctus arcu. Maecenas id enim et nibh ullamcorper auctor ac eu est. Donec imperdiet, diam quis malesuada faucibus, nibh ex gravida sapien, posuere pharetra nunc libero tristique turpis. Sed egestas laoreet semper. In hac habitasse platea dictumst. Praesent vitae est nec felis maximus facilisis. Duis luctus dui id urna tristique varius. Ut vulputate leo arcu, non bibendum arcu pulvinar eget. Fusce semper elit ut congue lacinia. Suspendisse magna diam, tempus vitae interdum eget, dictum vitae nisl. Praesent quis fringilla tortor. Donec vitae sagittis dui.',
+		description:reactjs,
 		logo: Assets.ReactJs,
 		name: 'React Js',
 		category: 'library'
@@ -93,7 +124,7 @@ export const items = [
 	defineSkill({
 		slug: 'svelte',
 		color: 'orange',
-		description: svelte,
+		description:svelte,
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
@@ -101,7 +132,7 @@ export const items = [
 	defineSkill({
 		slug: 'python',
 		color: 'orange',
-		description: svelte,
+		description: python,
 		logo: Assets.Python,
 		name: 'Python',
 		category: 'pro-lang'
@@ -109,7 +140,7 @@ export const items = [
 	defineSkill({
 		slug: 'nodejs',
 		color: 'orange',
-		description: svelte,
+		description: nodejs,
 		logo: Assets.NodeJs,
 		name: 'Node Js',
 		category: 'env'
@@ -117,7 +148,7 @@ export const items = [
 	defineSkill({
 		slug: 'expressjs',
 		color: 'orange',
-		description: svelte,
+		description: expressjs,
 		logo: Assets.ExpressJs,
 		name: 'Express Js',
 		category: 'framework'
@@ -125,7 +156,7 @@ export const items = [
 	defineSkill({
 		slug: 'mongodb',
 		color: 'orange',
-		description: svelte,
+		description: mongodb,
 		logo: Assets.MongoDB,
 		name: 'MongoDB',
 		category: 'db'
@@ -133,7 +164,7 @@ export const items = [
 	defineSkill({
 		slug: 'postgresql',
 		color: 'orange',
-		description: svelte,
+		description: postgresql,
 		logo: Assets.PostgreSQL,
 		name: 'PostgreSQL',
 		category: 'db'
@@ -141,7 +172,7 @@ export const items = [
 	defineSkill({
 		slug: 'redis',
 		color: 'orange',
-		description: svelte,
+		description: redis,
 		logo: Assets.Redis,
 		name: 'Redis',
 		category: 'db'
@@ -149,23 +180,23 @@ export const items = [
 	defineSkill({
 		slug: 'docker',
 		color: 'orange',
-		description: svelte,
+		description: docker,
 		logo: Assets.Docker,
 		name: 'Docker',
 		category: 'devops'
 	}),
-	defineSkill({
-		slug: 'kubernetes',
-		color: 'orange',
-		description: svelte,
-		logo: Assets.Kubernetes,
-		name: 'Kubernetes',
-		category: 'devops'
-	}),
+	// defineSkill({
+	// 	slug: 'kubernetes',
+	// 	color: 'orange',
+	// 	description: svelte,
+	// 	logo: Assets.Kubernetes,
+	// 	name: 'Kubernetes',
+	// 	category: 'devops'
+	// }),
 	defineSkill({
 		slug: 'aws',
 		color: 'orange',
-		description: svelte,
+		description: aws,
 		logo: Assets.AWS,
 		name: 'AWS',
 		category: 'devops'
@@ -173,7 +204,7 @@ export const items = [
 	defineSkill({
 		slug: 'fastapi',
 		color: 'orange',
-		description: svelte,
+		description: fastapi,
 		logo: Assets.FastApi,
 		name: 'Fast Api',
 		category: 'framework'
@@ -181,7 +212,7 @@ export const items = [
 	defineSkill({
 		slug: 'django',
 		color: 'orange',
-		description: svelte,
+		description: django,
 		logo: Assets.Django,
 		name: 'Django',
 		category: 'framework'
@@ -189,7 +220,7 @@ export const items = [
 	defineSkill({
 		slug: 'flask',
 		color: 'orange',
-		description: svelte,
+		description: flask,
 		logo: Assets.Flask,
 		name: 'Flask',
 		category: 'framework'
@@ -197,7 +228,7 @@ export const items = [
 	defineSkill({
 		slug: 'vite',
 		color: 'orange',
-		description: svelte,
+		description: vite,
 		logo: Assets.Vite,
 		name: 'Vite',
 		category: 'devtools'
@@ -205,7 +236,7 @@ export const items = [
 	defineSkill({
 		slug: 'tailwind',
 		color: 'orange',
-		description: svelte,
+		description: tailwiind,
 		logo: Assets.Tailwind,
 		name: 'Tailwind',
 		category: 'markup-style'
@@ -213,7 +244,7 @@ export const items = [
 	defineSkill({
 		slug: 'bootstrap',
 		color: 'orange',
-		description: svelte,
+		description: 'Level of Eexpertise : 8/10',
 		logo: Assets.Bootstrap,
 		name: 'Bootstrap',
 		category: 'markup-style'
@@ -221,7 +252,7 @@ export const items = [
 	defineSkill({
 		slug: 'pandas',
 		color: 'orange',
-		description: svelte,
+		description: pandas,
 		logo: Assets.Pandas,
 		name: 'Pandas',
 		category: 'library'
@@ -229,7 +260,7 @@ export const items = [
 	defineSkill({
 		slug: 'numpy',
 		color: 'orange',
-		description: svelte,
+		description: numpy,
 		logo: Assets.Numpy,
 		name: 'Numpy',
 		category: 'library'
@@ -237,7 +268,7 @@ export const items = [
 	defineSkill({
 		slug: 'firebase',
 		color: 'orange',
-		description: svelte,
+		description: firebase,
 		logo: Assets.Firebase,
 		name: 'Firebase',
 		category: 'db'
@@ -245,7 +276,7 @@ export const items = [
 	defineSkill({
 		slug: 'solidworks',
 		color: 'orange',
-		description: svelte,
+		description: solidworks,
 		logo: Assets.SolidWorks,
 		name: 'SolidWorks',
 		category: 'design'
@@ -253,7 +284,7 @@ export const items = [
 	defineSkill({
 		slug: 'mysql',
 		color: 'orange',
-		description: svelte,
+		description: mysql,
 		logo: Assets.MySQL,
 		name: 'MySQL',
 		category: 'db'
@@ -261,7 +292,7 @@ export const items = [
 	defineSkill({
 		slug: 'go',
 		color: 'orange',
-		description: svelte,
+		description: go,
 		logo: Assets.Go,
 		name: 'Go',
 		category: 'pro-lang'
@@ -269,7 +300,7 @@ export const items = [
 	defineSkill({
 		slug: 'android',
 		color: 'orange',
-		description: svelte,
+		description:android,
 		logo: Assets.Android,
 		name: 'Android',
 		category: 'env'
@@ -277,7 +308,7 @@ export const items = [
 	defineSkill({
 		slug: 'tensorflow',
 		color: 'orange',
-		description: svelte,
+		description: tensorflow,
 		logo: Assets.Tensorflow,
 		name: 'Tensorflow',
 		category: 'library'
@@ -285,7 +316,7 @@ export const items = [
 	defineSkill({
 		slug: 'php',
 		color: 'orange',
-		description: svelte,
+		description: php,
 		logo: Assets.PHP,
 		name: 'PHP',
 		category: 'pro-lang'
