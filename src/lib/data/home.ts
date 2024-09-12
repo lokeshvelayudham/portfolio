@@ -11,6 +11,10 @@ export const description =
 	'Dedicated software engineer with a passion for creating efficient, scalable solutions. Proficient in full-stack development. In my free time, I enjoy working on hands-on building projects, applying engineering principles to develop creative solutions both in and out of the digital space.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
+	{
+		platform: Platform.Email,
+		link: 'loki@case.edu'
+	},
 	{ platform: Platform.GitHub, link: 'https://github.com/lokeshvelayudham' },
 	{
 		platform: Platform.Linkedin,
@@ -24,10 +28,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// 	platform: Platform.StackOverflow,
 	// 	link: 'https://stackoverflow.com/'
 	// },
-	{
-		platform: Platform.Email,
-		link: 'loki@case.edu'
-	},
+	
 	// {
 	// 	platform: Platform.Youtube,
 	// 	link: 'https://www.youtube.com'
@@ -35,7 +36,15 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// {
 	// 	platform: Platform.Facebook,
 	// 	link: 'https://www.facebook.com'
-	// }
+	// },
+	{
+		platform: Platform.Call,
+		link: 'tel:+1-216-413-2056'
+	},
+	{
+		platform: Platform.WhatsApp,
+		link: 'https://wa.me/12164132056'
+	}
 ];
 
 export const skills = getSkills('js', 'css', 'html', 'reactjs', 'python', 'ts', 'nodejs' );
