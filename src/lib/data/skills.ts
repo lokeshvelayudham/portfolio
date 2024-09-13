@@ -26,6 +26,9 @@ import go from '../md/go.md?raw';
 import android from '../md/android.md?raw';
 import tensorflow from '../md/tensorflow.md?raw';
 import php from '../md/php.md?raw';
+import java from '../md/java.md?raw';
+import solidity from '../md/solidity.md?raw';
+
 
 
 
@@ -321,6 +324,24 @@ export const items = [
 		name: 'PHP',
 		category: 'pro-lang'
 	}),
+	defineSkill({
+		slug: 'java',
+		color: 'orange',
+		description: java,
+		logo: Assets.Java,
+		name: 'Java',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'solidity',
+		color: 'orange',
+		description: solidity,
+		logo: Assets.solidity,
+		name: 'Solidity',
+		category: 'pro-lang'
+	}),
+	
+	
 	
 	
 	

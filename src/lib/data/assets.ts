@@ -85,12 +85,22 @@ const Assets = {
 	GUVI: a('gv.webp'),
 	PHP: a('php.png'),
 	Beyondx: a('bx.png'),
+	gitCraft: a('gitCraft.png'),
+	TurboKnights: a('tb.png'),
+	gUSD: a('gusd.png'),
+	HaloHarbour: a('halo.png'),
+	solidity: a('sol.png'),
+	PerpCopyTrading: a('pct.png'),
+	Portfolio: a('portfolio.png'),
+
+
 
 	// Screenshots of Products
 	AlterCabsScreenshot1: s('alter1.png'),
 	AlterCabsScreenshot2: s('alter2.png'),
 	AlterCabsScreenshot3: s('alter3.png'),
 	AlterCabsScreenshot4: s('alter4.png'),
+	AlterCabsScreenshot5: s('alter5.png'),
 	GuviScreeshot1: s('guvi1.png'),
 	GuviScreeshot2: s('guvi2.png'),
 	GuviScreeshot3: s('guvi3.png'),
@@ -98,6 +108,19 @@ const Assets = {
 	gitCraftScreenshot2: s('gc2.png'),
 	gitCraftScreenshot3: s('gc3.png'),
 	gitCraftScreenshot4: s('gc4.png'),
+	IntersectionScreenshot1: s('intersection1.png'),
+	IntersectionScreenshot2: s('intersection2.png'),
+	IntersectionScreenshot3: s('intersection3.png'),
+	FooxTechnologiesScreenshot1: s('foox1.png'),
+	FooxTechnologiesScreenshot2: s('foox2.png'),
+	TurboKnightsScreenshot1: s('tb1.png'),
+	TurboKnightsScreenshot2: s('tb2.png'),
+	HaloHarbourScreenshot1: s('halo1.png'),
+	HaloHarbourScreenshot2: s('halo2.png'),
+	HaloHarbourScreenshot3: s('halo3.png'),
+	PortfolioScreenshot1: s('port1.png'),
+	PortfolioScreenshot2: s('port2.png'),
+	PortfolioScreenshot3: s('port3.png'),
 };
 
 export default Assets;

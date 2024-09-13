@@ -15,6 +15,14 @@ export const links: Array<{ platform: Platform; link: string }> = [
 		platform: Platform.Email,
 		link: 'loki@case.edu'
 	},
+	{
+		platform: Platform.Call,
+		link: 'tel:+1-216-413-2056'
+	},
+	{
+		platform: Platform.WhatsApp,
+		link: 'https://wa.me/12164132056'
+	},
 	{ platform: Platform.GitHub, link: 'https://github.com/lokeshvelayudham' },
 	{
 		platform: Platform.Linkedin,
@@ -37,14 +45,7 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// 	platform: Platform.Facebook,
 	// 	link: 'https://www.facebook.com'
 	// },
-	{
-		platform: Platform.Call,
-		link: 'tel:+1-216-413-2056'
-	},
-	{
-		platform: Platform.WhatsApp,
-		link: 'https://wa.me/12164132056'
-	}
+	
 ];
 
 export const skills = getSkills('js', 'css', 'html', 'reactjs', 'python', 'ts', 'nodejs' );
