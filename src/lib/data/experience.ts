@@ -28,7 +28,7 @@ The Intersection application has three primary modules:
 		location: 'Cleveland, OH',
 		period: { from: new Date(2024, 0, 1) },
 		skills: getSkills('ts', 'js', 'reactjs', 'nodejs', 'expressjs', 'mysql',),
-		name: 'Software Application Developer - Undergraduate Research Office',
+		name: 'Software Developer - Undergraduate Research Office',
 		color: 'red',
 		links: [],
 		logo: Assets.CWRU,
