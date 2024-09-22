@@ -318,7 +318,7 @@ AWS Nitro Enclaves provide isolated execution environments for secure data compu
 		]
 	},
 	{
-		slug: 'portfolio',
+		slug: 'portfolo',
 		color: '#ff3e00',
 		description:
 			`Technical Description: \n
