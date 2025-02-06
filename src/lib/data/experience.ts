@@ -4,6 +4,37 @@ import { ContractType, type Experience } from '../types';
 
 export const items: Array<Experience> = [
 	{
+		slug: 'BioInvision',
+		company: 'BioInVision',
+		description: `• Developed a high-performance 4D medical volume rendering software using C++, Python, Qt, and MATLAB.
+
+• Implemented advanced visualization techniques for processing and rendering complex medical imaging datasets.
+
+• Integrated deep learning models for automated segmentation and enhancement of medical volumes.
+
+\n \n
+
+• Previously, medical professionals faced challenges in visualizing and analyzing 4D medical imaging data due to performance limitations and complex data handling requirements. To address this, we developed a comprehensive solution that combines high-performance rendering with intuitive user interfaces. This software significantly improves the efficiency of medical image analysis and diagnosis through real-time visualization and advanced processing capabilities.
+
+The medical imaging software consists of three primary components:
+
+1. Core Rendering Engine: Built with C++ and OpenGL, providing real-time 4D volume rendering with optimized memory management and SIMD acceleration for handling large medical datasets.
+
+2. Analysis Framework: Integrates MATLAB and Python-based deep learning models for sophisticated image processing, including automated segmentation, noise reduction, and feature enhancement of medical volumes.
+
+3. Clinical Interface: Developed using Qt framework, offering an intuitive GUI with specialized medical visualization tools, including synchronized multi-planar views, custom transfer function editors, and DICOM series navigation. Features comprehensive measurement tools and annotation systems for detailed medical analysis.`,
+		contract: ContractType.FullTime,
+		type: 'Software Development',
+		location: 'Cleveland, OH',
+		period: { from: new Date(2025, 0, 1)  },
+		skills: getSkills('cpp', 'python', 'matlab', 'medical imaging', 'qt'),
+		name: 'Software Developer ',
+		color: 'red',
+		links: [],
+		logo: Assets.BioInVision,
+		shortDescription: '4D render Imaging Software for Computed Tomograpty'
+	},
+	{
 		slug: 'open-sourcer',
 		company: 'Case Western Reserve University',
 		description: `• Developed full-stack registration app using MERN stack with dashboards for students, judges, and admins.
@@ -26,7 +57,7 @@ The Intersection application has three primary modules:
 		contract: ContractType.PartTime,
 		type: 'Software Development',
 		location: 'Cleveland, OH',
-		period: { from: new Date(2024, 0, 1) },
+		period: { from: new Date(2024, 0, 1) ,to: new Date(2025, 0, 1) },
 		skills: getSkills('ts', 'js', 'reactjs', 'nodejs', 'expressjs', 'mysql',),
 		name: 'Software Developer - Undergraduate Research Office',
 		color: 'red',
@@ -71,7 +102,7 @@ These contributions were crucial in establishing Alter Cabs as a competitive pla
 		contract: ContractType.PartTime,
 		type: 'Teaching Assistant',
 		location: 'Cleveland, OH',
-		period: { from: new Date(2024, 7, 1) },
+		period: { from: new Date(2024, 7, 1) ,to: new Date(2025, 0, 1) },
 		skills: getSkills('python', 'numpy', 'pandas','tensorflow'	),
 		name: 'Teaching Assistant',
 		color: 'green',

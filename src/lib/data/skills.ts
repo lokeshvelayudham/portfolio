@@ -28,6 +28,10 @@ import tensorflow from '../md/tensorflow.md?raw';
 import php from '../md/php.md?raw';
 import java from '../md/java.md?raw';
 import solidity from '../md/solidity.md?raw';
+import cpp from '../md/cpp.md?raw';
+import matlab from '../md/matlab.md?raw';
+import qt from '../md/qt.md?raw';
+
 
 
 
@@ -141,6 +145,14 @@ export const items = [
 		category: 'pro-lang'
 	}),
 	defineSkill({
+		slug: 'cpp',
+		color: 'orange',
+		description: cpp,
+		logo : Assets.Cpp,
+		name: 'C++',
+		category: 'pro-lang'
+	}),
+	defineSkill({
 		slug: 'nodejs',
 		color: 'orange',
 		description: nodejs,
@@ -211,6 +223,22 @@ export const items = [
 		logo: Assets.FastApi,
 		name: 'Fast Api',
 		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'matlab',
+		color: 'orange',
+		description: matlab,
+		logo: Assets.Matlab,
+		name: 'Matlab',
+		category: 'env'
+	}),
+	defineSkill({
+		slug: 'qt',
+		color: 'orange',
+		description: qt,
+		logo: Assets.Qt,
+		name: 'Qt',
+		category: 'env'
 	}),
 	defineSkill({
 		slug: 'django',

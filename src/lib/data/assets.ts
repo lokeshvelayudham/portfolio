@@ -92,6 +92,10 @@ const Assets = {
 	solidity: a('sol.png'),
 	PerpCopyTrading: a('pct.png'),
 	Portfolio: a('portfolio.png'),
+	BioInVision: a('BIV.png'),
+	Matlab :a ('matlab.png'),
+	Qt :a ('qt.png'),
+	
 
 
 
