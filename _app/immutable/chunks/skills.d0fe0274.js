@@ -1,4 +1,4 @@
-import{A as e}from"./UIcon.9b3d8a58.js";const p=`## Svelte in My Projects
+import{A as e}from"./UIcon.c514d58f.js";const p=`## Svelte in My Projects
 
 I have utilized Svelte in various projects, including:
 

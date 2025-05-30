@@ -1,4 +1,4 @@
-import{A as e}from"./UIcon.9b3d8a58.js";import{g as n}from"./skills.399c03e2.js";import{C as i}from"./types.816d9629.js";const s=[{slug:"BioInvision",company:"BioInVision",description:`• Developed a high-performance 4D medical volume rendering software using C++, Python, Qt, and MATLAB.
+import{A as e}from"./UIcon.c514d58f.js";import{g as n}from"./skills.d0fe0274.js";import{C as i}from"./types.816d9629.js";const s=[{slug:"BioInvision",company:"BioInVision",description:`• Developed a high-performance 4D medical volume rendering software using C++, Python, Qt, and MATLAB.
 
 • Implemented advanced visualization techniques for processing and rendering complex medical imaging datasets.
 
