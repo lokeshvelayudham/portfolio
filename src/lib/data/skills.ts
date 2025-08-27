@@ -31,6 +31,22 @@ import solidity from '../md/solidity.md?raw';
 import cpp from '../md/cpp.md?raw';
 import matlab from '../md/matlab.md?raw';
 import qt from '../md/qt.md?raw';
+import nextjs from '../md/nextjs.md?raw';
+import webgl from '../md/webgl.md?raw';
+import azure from '../md/azure.md?raw';
+import aiMl from '../md/ai-ml.md?raw';
+import medicalImaging from '../md/medical-imaging.md?raw';
+import ruby from '../md/ruby.md?raw';
+import rails from '../md/rails.md?raw';
+import ciCd from '../md/ci-cd.md?raw';
+import saas from '../md/saas.md?raw';
+import microservices from '../md/microservices.md?raw';
+import b2b from '../md/b2b.md?raw';
+import recruitmentPlatform from '../md/recruitment-platform.md?raw';
+import gpuComputing from '../md/gpu-computing.md?raw';
+import async from '../md/async.md?raw';
+import streaming from '../md/streaming.md?raw';
+import vtk from '../md/vtk.md?raw';
 
 
 
@@ -131,7 +147,7 @@ export const items = [
 	defineSkill({
 		slug: 'svelte',
 		color: 'orange',
-		description:svelte,
+		description: svelte,
 		logo: Assets.Svelte,
 		name: 'Svelte',
 		category: 'library'
@@ -200,14 +216,6 @@ export const items = [
 		name: 'Docker',
 		category: 'devops'
 	}),
-	// defineSkill({
-	// 	slug: 'kubernetes',
-	// 	color: 'orange',
-	// 	description: svelte,
-	// 	logo: Assets.Kubernetes,
-	// 	name: 'Kubernetes',
-	// 	category: 'devops'
-	// }),
 	defineSkill({
 		slug: 'aws',
 		color: 'orange',
@@ -368,17 +376,134 @@ export const items = [
 		name: 'Solidity',
 		category: 'pro-lang'
 	}),
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	defineSkill({
+		slug: 'nextjs',
+		color: 'black',
+		description: nextjs,
+		logo: Assets.NextJs,
+		name: 'Next.js',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'webgl',
+		color: 'orange',
+		description: webgl,
+		logo: Assets.WebGL,
+		name: 'WebGL',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'azure',
+		color: 'blue',
+		description: azure,
+		logo: Assets.Azure,
+		name: 'Azure',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'ai-ml',
+		color: 'purple',
+		description: aiMl,
+		logo: Assets.AIML,
+		name: 'AI/ML',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'medical-imaging',
+		color: 'green',
+		description: medicalImaging,
+		logo: Assets.MedicalImaging,
+		name: 'Medical Imaging',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'ruby',
+		color: 'red',
+		description: ruby,
+		logo: Assets.Ruby,
+		name: 'Ruby',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'rails',
+		color: 'red',
+		description: rails,
+		logo: Assets.Rails,
+		name: 'Ruby on Rails',
+		category: 'framework'
+	}),
+	defineSkill({
+		slug: 'ci-cd',
+		color: 'blue',
+		description: ciCd,
+		logo: Assets.CICD,
+		name: 'CI/CD',
+		category: 'devops'
+	}),
+	defineSkill({
+		slug: 'saas',
+		color: 'green',
+		description: saas,
+		logo: Assets.SaaS,
+		name: 'SaaS',
+		category: 'soft'
+	}),
+	defineSkill({
+		slug: 'microservices',
+		color: 'blue',
+		description: microservices,
+		logo: Assets.Microservices,
+		name: 'Microservices',
+		category: 'soft'
+	}),
+	defineSkill({
+		slug: 'b2b',
+		color: 'green',
+		description: b2b,
+		logo: Assets.B2B,
+		name: 'B2B',
+		category: 'soft'
+	}),
+	defineSkill({
+		slug: 'recruitment-platform',
+		color: 'blue',
+		description: recruitmentPlatform,
+		logo: Assets.RecruitmentPlatform,
+		name: 'Recruitment Platform',
+		category: 'soft'
+	}),
+	defineSkill({
+		slug: 'gpu-computing',
+		color: 'purple',
+		description: gpuComputing,
+		logo: Assets.GPUComputing,
+		name: 'GPU Computing',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'async',
+		color: 'green',
+		description: async,
+		logo: Assets.Async,
+		name: 'Async Programming',
+		category: 'pro-lang'
+	}),
+	defineSkill({
+		slug: 'streaming',
+		color: 'blue',
+		description: streaming,
+		logo: Assets.Streaming,
+		name: 'Streaming',
+		category: 'library'
+	}),
+	defineSkill({
+		slug: 'vtk',
+		color: 'orange',
+		description: vtk,
+		logo: Assets.VTK,
+		name: 'VTK.js',
+		category: 'library'
+	})
 ] as const;
 
 export const title = 'Skills';

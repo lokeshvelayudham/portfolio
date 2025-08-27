@@ -95,9 +95,22 @@ const Assets = {
 	BioInVision: a('BIV.png'),
 	Matlab :a ('matlab.png'),
 	Qt :a ('qt.png'),
-	
-
-
+	NextJs: a('nextjs.png'),
+	WebGL: a('webgl.png'),
+	Azure: a('azure.png'),
+	AIML: a('ai-ml.png'),
+	MedicalImaging: a('medical-imaging.png'),
+	Ruby: a('ruby.png'),
+	Rails: a('rails.png'),
+	CICD: a('ci-cd.png'),
+	SaaS: a('saas.png'),
+	Microservices: a('microservices.png'),
+	B2B: a('b2b.png'),
+	RecruitmentPlatform: a('recruitment-platform.png'),
+	GPUComputing: a('gpu-computing.png'),
+	Async: a('async.png'),
+	Streaming: a('streaming.png'),
+	VTK: a('vtk.png'),
 
 	// Screenshots of Products
 	AlterCabsScreenshot1: s('alter1.png'),

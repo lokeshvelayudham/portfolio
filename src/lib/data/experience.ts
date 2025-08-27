@@ -5,215 +5,103 @@ import { ContractType, type Experience } from '../types';
 export const items: Array<Experience> = [
 	{
 		slug: 'BioInvision',
-		company: 'BioInVision',
-		description: `• Developed a high-performance 4D medical volume rendering software using C++, Python, Qt, and MATLAB.
+		company: 'BioInVision Inc',
+		description: `• Engineered IschemiaViz, a 3D medical imaging viewer (C++, Qt, OpenInventor) integrating the proprietary ABHC algorithm; improved perfusion accuracy 15%, reduced manual processing 40%, and achieved sub-2s AI diagnostics on 10GB+ datasets via Python–C++ multithreading (~3× throughput).
 
-• Implemented advanced visualization techniques for processing and rendering complex medical imaging datasets.
+• Developed CryoViz Web, enabling real-time review of 500MB+ cryo datasets with <1s slice load; designed volumetric viewer (Next.js, WebGL/vtk.js) streaming from Azure Blob and MongoDB, with interactive annotation support.
 
-• Integrated deep learning models for automated segmentation and enhancement of medical volumes.
+• Implemented a hierarchical parent–child annotation schema with bidirectional linking in the 3D volume data model, enabling relational queries and synchronized rendering across annotation layers, reducing review iteration cycles 25%.
 
-\n \n
+• Built a parallelized streaming pipeline for cryo imaging datasets using Python async workers, Azure Blob chunked transfers, and memory-mapped file access, reducing load times from minutes to <15 seconds.
 
-• Previously, medical professionals faced challenges in visualizing and analyzing 4D medical imaging data due to performance limitations and complex data handling requirements. To address this, we developed a comprehensive solution that combines high-performance rendering with intuitive user interfaces. This software significantly improves the efficiency of medical image analysis and diagnosis through real-time visualization and advanced processing capabilities.
-
-The medical imaging software consists of three primary components:
-
-1. Core Rendering Engine: Built with C++ and OpenGL, providing real-time 4D volume rendering with optimized memory management and SIMD acceleration for handling large medical datasets.
-
-2. Analysis Framework: Integrates MATLAB and Python-based deep learning models for sophisticated image processing, including automated segmentation, noise reduction, and feature enhancement of medical volumes.
-
-3. Clinical Interface: Developed using Qt framework, offering an intuitive GUI with specialized medical visualization tools, including synchronized multi-planar views, custom transfer function editors, and DICOM series navigation. Features comprehensive measurement tools and annotation systems for detailed medical analysis.`,
+• Optimized and scaled TissueReM, cutting virtual staining time 30% and manual workload 50% via mixed-precision inference, model pruning, and multi-threaded data loaders; implemented multi-GPU inference and batched processing to reduce pipeline execution time 40%.`,
 		contract: ContractType.FullTime,
-		type: 'Software Development',
+		type: 'Software Engineer',
 		location: 'Cleveland, OH',
-		period: { from: new Date(2025, 0, 1)  },
-		skills: getSkills('cpp', 'python', 'matlab', 'medical imaging', 'qt'),
-		name: 'Software Developer ',
+		period: { from: new Date(2025, 0, 1) },
+		skills: getSkills('cpp', 'python', 'qt', 'nextjs', 'webgl', 'mongodb', 'azure', 'ai-ml', 'medical-imaging'),
+		name: 'Software Engineer',
 		color: 'red',
 		links: [],
 		logo: Assets.BioInVision,
-		shortDescription: '4D render Imaging Software for Computed Tomograpty'
+		shortDescription: '3D Medical Imaging Software Engineer - IschemiaViz & CryoViz Web Development'
 	},
 	{
-		slug: 'open-sourcer',
-		company: 'Case Western Reserve University',
-		description: `• Developed full-stack registration app using MERN stack with dashboards for students, judges, and admins.
+		slug: 'software-developer-ra-ta',
+		company: 'Case Western Reserve University - Undergraduate Research Office',
+		description: `• Owned design and delivery of an AI-assisted judge–student matching platform (MERN, AWS) that automated pairing for 1,500+ students and 250+ judges, cutting setup time from days to minutes and eliminating manual matching errors.
 
-• Automated student-judge matching for 1500+ students and 250+ judges, improving event efficiency.
+• Architected event-day operations module with real-time status tracking and automated notifications, reducing coordination overhead 40% and ensuring on-time judging sessions at scale.
 
-• Collaborated with University IT to integrate Single Sign-On (SSO) for secure user access.
-
-\n \n
-
-• Previously, matching students with judges was done manually, which was time-consuming and labor-intensive, especially during the event. As participant numbers grew, ensuring accurate matches became challenging. To address this, we built an application to automate the entire process from registration to student-judge matching and score evaluation. This solution reduces time, enhances accuracy, and streamlines communication for more efficient event management.
-
-The Intersection application has three primary modules:
-
-1. Student Registration: Allows students to register, provide details, upload poster presentations, and track registration status.
-
-2. Judge Registration: Enables judges (post-docs, master's students, PhD candidates, and staff) to create profiles, specify expertise, and indicate availability for suitable matching.
-
-3. Admin Operations: Manages student-judge matching, mailing, and score evaluation. Uses an algorithm to match students with judges based on criteria. Supports bulk mailing to judges about assignments and updates. Automates score evaluation by computing and averaging judges' scores for efficient competition outcomes.`,
+• Delivered Python and AI/ML instruction to 50+ students with high completion rates; mentored 30+ middle school students in AI and engineering through Think[STEM] outreach program.`,
 		contract: ContractType.PartTime,
-		type: 'Software Development',
+		type: 'Software Developer | RA | TA',
 		location: 'Cleveland, OH',
-		period: { from: new Date(2024, 0, 1) ,to: new Date(2025, 0, 1) },
-		skills: getSkills('ts', 'js', 'reactjs', 'nodejs', 'expressjs', 'mysql',),
-		name: 'Software Developer - Undergraduate Research Office',
+		period: { from: new Date(2024, 0, 1), to: new Date(2025, 0, 1) },
+		skills: getSkills('ts', 'js', 'reactjs', 'nodejs', 'expressjs', 'mysql', 'aws', 'python', 'ai-ml'),
+		name: 'Software Developer | RA | TA',
 		color: 'red',
 		links: [],
 		logo: Assets.CWRU,
-		shortDescription: 'Products and tools for Case Western Reserve University - undergraduate research office'
+		shortDescription: 'AI-assisted judge-student matching platform and Python/AI/ML instruction'
 	},
 	{
-		slug: 'software-alter-cabs',
+		slug: 'full-stack-engineer-alter-cabs',
 		company: 'Alter Cabs',
-		description: `Alter Cabs: Founded in 2024, Alter Cabs aims to provide a premium, reliable, and transparent ride-hailing experience for discerning customers, with a strong focus on safety, cleanliness, and professional service.
+		description: `• Architected and delivered a ride-hailing SaaS backend (Ruby on Rails) with React.js frontend, scaling to 4,000+ drivers across multiple regions with high availability.
 
-As a technical lead, I:
-• Spearheaded the development of core features
-• Managed cross-functional teams
-• Directed DevOps operations
-• Formulated scalable business plans by analyzing competitors
-• Refined the company's unique value proposition
-• Ensured seamless deployment and operational success
+• Developed and launched the "Quick Ride" feature, cutting ride confirmation time to <5 minutes through optimized dispatch algorithms and real-time matching.
 
-These contributions were crucial in establishing Alter Cabs as a competitive player in the ride-hailing market.`,
+• Implemented AWS-hosted, Dockerized CI/CD pipelines, improving deployment reliability and reducing rollback incidents 35%.`,
 		contract: ContractType.FullTime,
-		type: 'Software Development',
-		location: 'Hybrid',
-		period: { from: new Date(2023, 5, 1) },
-		skills: getSkills('go', 'ts', 'js','android'),
-		name: 'Head of Product',
+		type: 'Full Stack Engineer',
+		location: 'Chennai, India',
+		period: { from: new Date(2023, 5, 1), to: new Date(2024, 0, 1) },
+		skills: getSkills('ruby', 'rails', 'reactjs', 'aws', 'docker', 'ci-cd', 'saas'),
+		name: 'Full Stack Engineer',
 		color: 'blue',
 		links: [],
 		logo: Assets.AlterCabs,
-		shortDescription: 'Alter Cabs - Ride-hailing app, ensuring seamless deployment and scalability.'
+		shortDescription: 'Ride-hailing SaaS platform with 4,000+ drivers, Quick Ride feature, and AWS infrastructure'
 	},
 	{
-		slug: 'TA-CWRU',
-		company: 'Case Western Reserve University',
-		description: `Programming for Business Applications, Case Western Reserve University:
+		slug: 'full-stack-engineer-foox-technologies',
+		company: 'Foox Technologies',
+		description: `• Designed backend for B2B SaaS ordering platform (Node.js, Redis), serving 50+ enterprise clients with high concurrency and fault tolerance.
 
-• Facilitated Python instruction for 50+ students, achieving a course completion .
-• Guided student projects to solve 10+ business problems using Python, focusing on research and design.
-• Enhanced student engagement by 25% through interactive lectures, hands-on exercises, and timely feedback.
-• Provided comprehensive support as a Teaching Assistant, contributing to the overall success of the course`,
-		contract: ContractType.PartTime,
-		type: 'Teaching Assistant',
-		location: 'Cleveland, OH',
-		period: { from: new Date(2024, 7, 1) ,to: new Date(2025, 0, 1) },
-		skills: getSkills('python', 'numpy', 'pandas','tensorflow'	),
-		name: 'Teaching Assistant',
-		color: 'green',
-		links: [],
-		logo: Assets.CWRU,
-		shortDescription: 'Teaching Assistant for Programming for Business Applications under Professor Dr.Pablo Azar'
-	},
-	{
-		slug: 'TA-summer-2024',
-		company: 'Case Western Reserve University',
-		description: `Mentored 30+ middle school students in engineering concepts, fostering interest in STEM careers.
+• Engineered Firebase- and Golang-based microservices, boosting search performance 30% and enabling sub-second results.
 
-• Led 10+ hands-on activities at think[box], boosting student confidence
-• Taught technical skills through practical demonstrations
-• Facilitated interactive learning experiences in engineering concepts
-• Encouraged hands-on exploration of STEM principles
-• Developed an interactive curriculum, increasing student engagement by 25% through practical learning.`,
+• Directed MVP delivery ahead of schedule, helping secure ₹4.5M funding and generate ₹0.75 crore revenue in 6 months.`,
 		contract: ContractType.FullTime,
-		type: 'Teaching Assistant',
-		location: 'Cleveland, OH',
-		period: { from: new Date(2024, 5, 1),to: new Date(2024, 6, 1) },
-		skills: getSkills('python', 'numpy', 'pandas','tensorflow'	),
-		name: 'Teaching Assistant-Camp Counsellor',
-		color: 'green',
-		links: [],
-		logo: Assets.CWRU,
-		shortDescription: 'Headed a STEM program for 30+ middle school students, under   Leah Jackson, Director, think[STEM] Day Camp'
-	},
-
-
-	{
-		slug: 'co-founder-blind-ch3mistry',
-		company: 'Blind Ch3mistry',
-		description: `• Co-founded and developed a business model for a startup that secured Rs 150M in funding and achieved 20% year-over-year growth.
-
-• Led a cross-functional team of 35+ members, driving a 40% increase in revenue while maintaining an 8% profit margin.
-
-• Spearheaded the launch of 100 new products, expanding the product portfolio by 200% and boosting sales revenue by 40% within the first year.`,
-		contract: ContractType.Founder,
-		type: 'Co-founder',
+		type: 'Full Stack Engineer (Founding Member)',
 		location: 'Chennai, India',
-		period: { from: new Date(2019, 5, 1), to: new Date(2023, 11, 1) },
-		skills: getSkills(	),
-		name: 'Co-founder',
+		period: { from: new Date(2019, 5, 1), to: new Date(2023, 4, 1) },
+		skills: getSkills('nodejs', 'redis', 'firebase', 'go', 'microservices', 'b2b', 'saas'),
+		name: 'Full Stack Engineer (Founding Member)',
 		color: 'green',
 		links: [],
-		logo: Assets.BlindCh3mistry,
-		shortDescription: 'Co-founded a company, secured Rs 150M in funding, led a 35+ member team to achieve 20% YoY growth, and increased product offerings and sales revenue significantly.'
+		logo: Assets.FooxTechnologies,
+		shortDescription: 'B2B SaaS ordering platform with 50+ enterprise clients, 30% search improvement, ₹4.5M funding'
 	},
-	
-{
-			slug: 'full-stack-developer-foox-technologies',
-			company: 'Foox Technologies',
-			description: `• Co-founded and developed a B2B MERN application for Foox Technologies, serving 50+ HoReCa clients. • Implemented Firebase and GoLang microservices, improving search efficiency by 30%.
-• Secured ₹4.5M in funding and generated ₹0.75 crore in revenue within 6 months.`,
-			contract: ContractType.FullTime,
-			type: 'Full stack developer',
-			location: 'Chennai, India',
-			period: { from: new Date(2022, 0, 1), to: new Date(2023, 3, 1) },
-			skills: getSkills('python', 'numpy', 'pandas','tensorflow','reactjs','nodejs','expressjs','mysql'	,'mongodb'),
-			name: 'Full stack developer | Founding Member',
-			color: 'green',
-			links: [],
-			logo: Assets.FooxTechnologies,
-			shortDescription: 'Co-founded and developed a B2B MERN application for Foox Technologies, serving 50+ clients, integrating Firebase and GoLang for a 30% improvement in search efficiency, and secured ₹4.5M in funding with ₹0.75 crore in revenue within 6 months.'
-		},
-		{
-			slug: 'software-developer-guvi',
-			company: 'GUVI Geek Networks',
-			description: `• Developed a PHP hiring module that successfully connected 50+ employers with over 1000 students within 4 months.
+	{
+		slug: 'software-developer-guvi',
+		company: 'GUVI Geek Technologies',
+		description: `• Owned development of a PHP-based hiring platform module connecting 50 employers with 1,000+ students in 4 months, streamlining recruitment.
 
-• Integrated microservices to enhance performance by 25% and boost employer engagement by 30%.
+• Integrated microservices architecture to improve system performance 25% and enhance scalability for growing employer–student activity.
 
-• This led to a 15% increase in company revenue through improved recruitment processes and interactions.`,
-
-
-			contract: ContractType.FullTime,
-			type: 'Software Developer',
-			location: 'Chennai, India',
-			period: { from: new Date(2019, 0, 1), to: new Date(2019, 6, 1) },
-			skills: getSkills('python', 'reactjs','nodejs','expressjs','mysql'	,'mongodb','php'),
-			name: 'Software Developer ',
-			color: 'green',
-			links: [],
-			logo: Assets.GUVI,
-			shortDescription: 'Developed a PHP hiring module that connected 50+ employers with 1000+ students, improved performance by 25%, and increased revenue by 15% in 4 months.'
-		},
-		{
-			slug: 'Web Developer',
-			company: 'Beyondx Technologies',
-			description: `• Developed innovative web-based LMS and VR/AR solutions, enhancing interactive learning experiences and ensuring seamless technology integration.
-
-• Spearheaded the development of a comprehensive LMS, integrating advanced features such as gamification and personalized learning paths to boost user engagement and retention.
-
-• Led the implementation of VR/AR solutions, including the creation of interactive 3D environments and immersive simulations, to provide students with hands-on, real-world experiences.
-
-• This led to a 15% increase in company revenue through improved recruitment processes and interactions.`,
-
-
-			contract: ContractType.FullTime,
-			type: 'Web Developer',
-			location: 'Chennai, India',
-			period: { from: new Date(2018, 0, 1), to: new Date(2018, 11, 1) },
-			skills: getSkills('python', 'reactjs','nodejs','expressjs','mysql'	,'mongodb','php'),
-			name: 'Web Developer ',
-			color: 'green',
-			links: [],
-			logo: Assets.Beyondx,
-			shortDescription: 'Developed innovative web-based LMS and VR/AR solutions, enhancing interactive learning experiences and ensuring seamless technology integration.'
-		}
-		
+• Optimized backend workflows to increase employer engagement 30% and drive a 15% revenue uplift through improved recruitment efficiency.`,
+		contract: ContractType.FullTime,
+		type: 'Software Developer',
+		location: 'Chennai, India',
+		period: { from: new Date(2019, 0, 1), to: new Date(2019, 5, 1) },
+		skills: getSkills('php', 'microservices', 'mysql', 'recruitment-platform'),
+		name: 'Software Developer',
+		color: 'green',
+		links: [],
+		logo: Assets.GUVI,
+		shortDescription: 'PHP hiring platform connecting 50+ employers with 1000+ students, 25% performance improvement'
+	}
 ];
 
 export const title = 'Experience';

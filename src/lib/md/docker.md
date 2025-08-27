@@ -1,16 +1,53 @@
 ## Docker in My Projects
 
-I have leveraged Docker in several projects to enhance deployment, scalability, and consistency:
-### Halo Harbour
-### Alter Cabs
-- **Containerized Applications**: Docker was used to package applications with all their dependencies into containers, ensuring that they run consistently across different environments and reducing setup time.
+Docker has been essential for containerizing applications, ensuring consistency across development and production environments. Here's how I've implemented Docker across various projects:
 
-- **Microservices Deployment**: For projects involving microservices architecture, Docker containers were utilized to deploy and manage individual services, enabling independent scaling and easier maintenance.
+### CryoViz Web - Medical Imaging Platform
+**Multi-Service Architecture**: Used Docker to containerize the Next.js frontend, Python microservice, and supporting infrastructure.
 
-- **CI/CD Integration**: Docker was integrated into CI/CD pipelines to automate the building, testing, and deployment of applications. This streamlined the release process and improved deployment reliability.
+**Docker Implementation**:
+- **Frontend Container**: Next.js 14 application with optimized build process
+- **Python Microservice**: Containerized image processing service with GPU support
+- **Database Containers**: MongoDB and Redis containers for data persistence
+- **Load Balancer**: Nginx container for request routing and SSL termination
+- **Multi-stage Builds**: Optimized image sizes for production deployment
 
-- **Development Environments**: Docker provided isolated development environments for various projects, allowing developers to work with specific versions and configurations without interfering with other projects.
+### IschemiaViz - 3D Medical Imaging Viewer
+**C++ Application Containerization**: Containerized the C++ application for consistent deployment across different environments.
 
-- **Scalable Solutions**: Docker was employed alongside orchestration tools to manage and scale containerized applications across multiple servers, supporting high availability and load balancing.
+**Docker Features Used**:
+- **Base Images**: Custom C++ runtime with Qt and OpenInventor dependencies
+- **GPU Support**: NVIDIA Docker runtime for GPU-accelerated medical imaging
+- **Volume Mounting**: Persistent storage for medical datasets and user preferences
+- **Health Checks**: Container health monitoring for critical medical applications
+- **Security**: Non-root user execution and minimal attack surface
 
-Docker’s capabilities in containerization and orchestration have significantly improved the efficiency and consistency of application development and deployment processes in my projects.
+### TissueReM - AI-Powered Virtual Staining
+**ML Pipeline Containerization**: Built Docker containers for the complete AI/ML pipeline and GPU-accelerated processing.
+
+**Container Architecture**:
+- **Training Container**: PyTorch and TensorFlow environments for model development
+- **Inference Container**: Optimized runtime for production AI inference
+- **GPU Runtime**: CUDA-enabled containers for multi-GPU processing
+- **Data Pipeline**: Containerized data preprocessing and augmentation workflows
+- **Model Serving**: REST API containers for model deployment and serving
+
+### Halo Harbour - Decentralized Platform
+**Microservices Architecture**: Implemented Docker for the decentralized application's microservices.
+
+**Docker Implementation**:
+- **Service Isolation**: Separate containers for Java, Python, and React services
+- **Network Configuration**: Custom Docker networks for secure inter-service communication
+- **Persistent Storage**: Volume management for blockchain and user data
+- **Environment Management**: Consistent development and production environments
+- **CI/CD Integration**: Automated Docker builds and deployments
+
+### Technical Achievements
+- **Deployment Speed**: Reduced deployment time from hours to minutes with containerization
+- **Environment Consistency**: Eliminated "works on my machine" issues across development teams
+- **Scalability**: Easy horizontal scaling with Docker Compose and orchestration tools
+- **Resource Optimization**: Reduced infrastructure costs through efficient container management
+- **Security**: Implemented security best practices with minimal container images
+
+### Skills Level: 9/10
+My Docker expertise includes multi-stage builds, orchestration, security hardening, GPU support, and building production-ready containerized applications for healthcare and business domains.
