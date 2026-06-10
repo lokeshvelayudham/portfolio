@@ -14,7 +14,7 @@ export const items: Array<Experience> = [
 
 • Built a parallelized streaming pipeline for cryo imaging datasets using Python async workers, Azure Blob chunked transfers, and memory-mapped file access, reducing load times from minutes to <15 seconds.
 
-• Optimized and scaled TissueReM, cutting virtual staining time 30% and manual workload 50% via mixed-precision inference, model pruning, and multi-threaded data loaders; implemented multi-GPU inference and batched processing to reduce pipeline execution time 40%.`,
+• Built and scaled StainViz virtual staining workflows, cutting inference latency 40% via FP16 optimization, request batching, and memory tuning; supported first-author Cytotherapy work on stain-free histology and fluorescence staining with AI.`,
 		contract: ContractType.FullTime,
 		type: 'Software Engineer',
 		location: 'Cleveland, OH',
@@ -24,7 +24,7 @@ export const items: Array<Experience> = [
 		color: 'red',
 		links: [],
 		logo: Assets.BioInVision,
-		shortDescription: '3D Medical Imaging Software Engineer - IschemiaViz & CryoViz Web Development'
+		shortDescription: 'Medical imaging and AI systems engineer across StainViz, IschemiaViz, and CryoViz Web'
 	},
 	{
 		slug: 'software-developer-ra-ta',

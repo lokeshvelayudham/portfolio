@@ -129,7 +129,7 @@
 		&-item {
 			text-decoration: none;
 			font-weight: 400;
-			padding: 10px 20px;
+			padding: 10px 14px;
 			color: inherit;
 			display: flex;
 			align-items: center;

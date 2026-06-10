@@ -23,7 +23,7 @@
 
 	$: screenshot =
 		typeof screenIndex !== 'undefined' && screenshots[screenIndex]
-			? screenshots[screenIndex]
+			? { ...screenshots[screenIndex], src: getAssetURL(screenshots[screenIndex].src) }
 			: undefined;
 
 	$: computedTitle = data.project ? `${data.project.name} - ${title}` : title;
@@ -93,7 +93,7 @@
 				</div>
 				{#if screenshots.length > 0}
 					<div
-						class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-t-10 "
+						class="px-10px grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 m-t-10"
 					>
 						{#each screenshots as item, index}
 							<!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -107,7 +107,7 @@
 							>
 								<div
 									class="screenshot aspect-video bg-contain w-100% cursor-pointer"
-									style={`background-image: url(${item.src});`}
+									style={`background-image: url(${getAssetURL(item.src)});`}
 								/>
 								<p class="text-[var(--tertiary-text)] font-300">{item.label}</p>
 							</div>

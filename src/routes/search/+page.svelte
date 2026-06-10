@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import * as experiences from '@data/experience';
+	import * as publications from '@data/publications';
 	import * as projects from '@data/projects';
 	import * as skills from '@data/skills';
 
@@ -62,6 +63,15 @@
 				icon: 'i-carbon-development',
 				name: `${data.name} @ ${data.company}`,
 				to: `experience/${data.slug}`
+			}))
+		);
+
+		result.push(
+			...filterItemsByQuery(publications.searchItems, query).map<SearchResultItem>((data) => ({
+				data,
+				icon: 'i-carbon-document',
+				name: data.name,
+				to: `publications#${data.slug}`
 			}))
 		);
 	}

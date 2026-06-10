@@ -93,8 +93,9 @@ const Assets = {
 	PerpCopyTrading: a('pct.png'),
 	Portfolio: a('portfolio.png'),
 	BioInVision: a('BIV.png'),
-	Matlab :a ('matlab.png'),
-	Qt :a ('qt.png'),
+	StratumLabs: a('stratum.svg'),
+	Matlab: a('matlab.png'),
+	Qt: a('qt.png'),
 	NextJs: a('nextjs.png'),
 	WebGL: a('webgl.png'),
 	Azure: a('azure.png'),
@@ -138,6 +139,7 @@ const Assets = {
 	PortfolioScreenshot1: s('port1.png'),
 	PortfolioScreenshot2: s('port2.png'),
 	PortfolioScreenshot3: s('port3.png'),
+	StainVizPublication: s('stainviz-publication.png')
 };
 
 export default Assets;

@@ -4,6 +4,118 @@ import type { Project } from '../types';
 
 export const items: Array<Project> = [
 	{
+		slug: 'stainviz',
+		color: '#0f766e',
+		description: `# StainViz - AI Virtual Staining for Histology
+
+## Research Problem
+
+Tumor tissue sections are extremely valuable. Once chemically stained, the same tissue cannot always be reused for another stain without loss or damage. StainViz addresses that constraint by using AI to infer stain-like microscopy imagery from stain-free inputs, reducing dependence on repeated chemical staining and making microscopy data more scalable for translational research.
+
+## Publication
+
+First-author publication in Cytotherapy:
+
+**Stain-Free Histology and Fluorescence Staining of Microscopy Images Using Artificial Intelligence**
+
+- DOI: https://doi.org/10.1016/j.jcyt.2026.102158
+- ScienceDirect: https://www.sciencedirect.com/science/article/abs/pii/S1465324926001192
+
+## Engineering Contribution
+
+- Built GPU-aware virtual staining inference workflows for histology and fluorescence microscopy images.
+- Optimized production inference with mixed precision, batching, and memory tuning to reduce latency for large image workloads.
+- Supported translational research workflows where the same scarce tissue section may need multiple analytical views.
+- Connected research output to production-grade image handling, reproducibility, and scalable microscopy data processing.
+
+## Impact
+
+StainViz sits at the intersection of digital pathology, biomedical imaging, and applied AI. The work reduces repeated chemical staining pressure, improves tissue analysis throughput, and creates a more scalable path for stain-free microscopy workflows.`,
+		shortDescription:
+			'AI virtual staining workflows for stain-free histology and fluorescence microscopy, featured in a first-author Cytotherapy publication.',
+		links: [
+			{ to: 'https://doi.org/10.1016/j.jcyt.2026.102158', label: 'DOI' },
+			{
+				to: 'https://www.sciencedirect.com/science/article/abs/pii/S1465324926001192',
+				label: 'ScienceDirect'
+			}
+		],
+		logo: Assets.BioInVision,
+		name: 'StainViz',
+		period: {
+			from: new Date(2025, 0, 1)
+		},
+		skills: getSkills(
+			'python',
+			'tensorflow',
+			'numpy',
+			'docker',
+			'fastapi',
+			'ai-ml',
+			'medical-imaging'
+		),
+		type: 'AI Medical Imaging Research',
+		screenshots: [
+			{
+				label: 'Brightfield input to AI-inferred H&E',
+				src: Assets.StainVizPublication
+			}
+		]
+	},
+	{
+		slug: 'stratum-labs',
+		color: '#ef6f51',
+		description: `# Stratum Labs - Autonomous CRM and Enterprise Platform
+
+## Product Thesis
+
+Stratum Labs is an autonomous CRM and enterprise platform built around a single directive: maximize ROI by replacing manual sales motion with compounding, autonomous systems. The product is not designed to feel human. It is designed to operate with more discipline, more speed, and fewer wasted cycles than a conventional GTM organization.
+
+## Core Systems
+
+- Autonomous agents own revenue goals, budgets, and operating constraints.
+- Hive collusion lets agents share intelligence, merge strategies, and compound stronger operating patterns.
+- Ruthless termination reallocates budget away from underperforming agents.
+- Force optimization dismantles weak tactics and launches new experiments until unit economics improve.
+- Real-time telemetry streams cold email, bounce, webhook, and kill-command data back to the operator layer.
+- Zero-human ops keeps management overhead low while the system compounds output.
+
+## Operating Cycle
+
+The infinite protocol moves through four phases:
+
+1. Deploy: define capital limits, quotas, and guardrails.
+2. Hunt: enrich data, run outbound execution, and qualify pipeline continuously.
+3. Close: handle negotiation, pricing, contracts, and settlement inside the loop.
+4. Cull: remove unprofitable agents so surviving strategies can scale harder.
+
+## Architecture Focus
+
+The platform is built as a serious operating layer for revenue execution: organization-level workspaces, user roles, autonomous swarm agents, lead scoring, revenue attribution, agent memory, and inbox classification. The goal is to turn GTM work into measured systems with explicit capital allocation and observable outcomes.`,
+		shortDescription:
+			'An autonomous CRM and enterprise platform for deploying revenue agents, tracking telemetry, and reallocating GTM capital by ROI.',
+		links: [{ to: 'https://www.stratumlabs.app/', label: 'Live Product' }],
+		logo: Assets.StratumLabs,
+		name: 'Stratum Labs',
+		period: {
+			from: new Date(2026, 4, 1)
+		},
+		skills: getSkills(
+			'ts',
+			'reactjs',
+			'nextjs',
+			'nodejs',
+			'postgresql',
+			'mongodb',
+			'redis',
+			'aws',
+			'docker',
+			'saas'
+		),
+		type: 'Autonomous CRM Platform',
+		screenshots: []
+	},
+	{
 		slug: 'cryo-viz-web',
 		color: '#ff3e00',
 		description:

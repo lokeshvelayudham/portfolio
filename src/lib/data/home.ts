@@ -3,25 +3,25 @@ import { getSkills } from './skills';
 
 export const title = 'Home';
 
-export const name = 'Lokesh';
+export const name = 'Lokesh Poluru';
 
 export const lastName = 'Velayudham';
 
 export const description =
-	'AI-driven & full-stack Software Engineer with 4+ years\' experience designing and scaling distributed, fault-tolerant systems for healthcare, SaaS, and logistics. Proven in high-performance computing (3× throughput, −40% ops), cloud-native architectures (AWS/GCP), and AI/ML solutions optimizing large-scale workflows. Skilled in system design, performance tuning, and delivering customer-impactful products end-to-end.';
+	'Senior Software Engineer building clinical AI imaging systems, large-scale inference pipelines, and autonomous enterprise products.';
 
 export const links: Array<{ platform: Platform; link: string }> = [
 	{
 		platform: Platform.Email,
-		link: 'lokesh.beyondx@gmail.com'
+		link: 'lokeshvelayudham@gmail.com'
 	},
 	{
 		platform: Platform.Call,
-		link: 'tel:+1-773-654-8775'
+		link: 'tel:+1-216-413-2056'
 	},
 	{
 		platform: Platform.WhatsApp,
-		link: 'https://wa.me/17736548775'
+		link: 'https://wa.me/12164132056'
 	},
 	{ platform: Platform.GitHub, link: 'https://github.com/lokeshvelayudham' },
 	{
@@ -31,12 +31,12 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	{
 		platform: Platform.Twitter,
 		link: 'https://twitter.com/LokeshVelayudha'
-	},
+	}
 	// {
 	// 	platform: Platform.StackOverflow,
 	// 	link: 'https://stackoverflow.com/'
 	// },
-	
+
 	// {
 	// 	platform: Platform.Youtube,
 	// 	link: 'https://www.youtube.com'
@@ -45,7 +45,20 @@ export const links: Array<{ platform: Platform; link: string }> = [
 	// 	platform: Platform.Facebook,
 	// 	link: 'https://www.facebook.com'
 	// },
-	
 ];
 
-export const skills = getSkills('js', 'css', 'html', 'reactjs', 'python', 'ts', 'nodejs', 'cpp', 'java', 'aws', 'docker', 'fastapi', 'nextjs' );
+export const skills = getSkills(
+	'js',
+	'css',
+	'html',
+	'reactjs',
+	'python',
+	'ts',
+	'nodejs',
+	'cpp',
+	'java',
+	'aws',
+	'docker',
+	'fastapi',
+	'nextjs'
+);
